@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account</title>
+</head>
+<body>
+    <script>
+        let name;
+        let acc_num;
+        let bal;
+        name = prompt("ENTER ACCOUNT HOLDER NAME ");
+        acc_num = Number(prompt("ENTER ACCOUNT NUMBER"));
+       
+        const bank ={
+            account : name,
+            accont_number : acc_num,
+            blanace : bal
+
+
+
+        
+        }
+        function deposit(n){
+            bank.bal = n;
+        }
+        function withdraw(n){
+            return bank.bal - n;
+
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product_id;
+        let product_name;
+        let product_price;
+        let product_quantity;
+
+        product_id =prompt("enter the id of product");
+        product_name = prompt("enter product name ");
+        product_price = Number(prompt("Enter the price of prodcut"));
+        product_quantity = Number(prompt("Enter the quantity of product"));
+
+
+        const product = {
+            product : product_id,
+            name : product_name,
+            price : product_price,
+            quantity : product_quantity
+        }
+         function newquantuty(n){
+            product.quantity = n;
+
+         }
+
+         function totalprice(){
+            return (product.price*product.quantity);
+
+         }
+         function display() {
+            console.log(product.product);
+            console.log(product.name);
+            console.log(product.price);
+            console.log(product.quantity);
+            console.log(totalprice())
+
+         }
+         display();
+            
+         
+
+
+    </script>
+    
+    
+</body>
+</html>
