@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class employee {
+        id = 0;
+        name = " ";
+        basicsal = 0;
+
+        constructor(id, name, basicsal) {
+          this.id = id;
+          this.name = name;
+          this.basicsal = basicsal;
+        }
+        calculatesalary() {
+          return this.basicsal;
+        }
+      }
+      class manger extends employee {
+        constructor(id, name, basicsal) {
+          super(id, name, basicsal);
+        }
+        calculatesalary(incentive) {
+          return this.basics + incentive;
+        }
+      }
+
+      let m1 = new manger(200, "rishank", 500);
+      console.log(calculatesalary(100));
+    </script>
+  </body>
+</html>

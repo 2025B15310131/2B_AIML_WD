@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>e-commerce</title>
+</head>
+<body>
+	<script>
+		class Product{
+			productId = "";
+			productName = "";
+			price = 0;
+
+			constructor(productId, product, productName){
+				this.productId = productId;
+				this.product = product;
+				this.productName = productName;
+			}
+
+			static compareProducts(p1, p2){
+				if(p1.price > p2.price){
+					console.log(p1.name, " has higher price");
+				}
+				else{
+					console.log(p2.name, " has higher price");
+				}
+			}
+
+			getDiscountPrice(discount){
+				if(discout > this.price){
+					console.log("invalid");
+				}
+				else{
+					return this.price-discount;
+				}
+			}
+		}
+
+		let p1 = new Product("134@414", "bionics", 3432);
+		let p2 = new Product("134@414", "printer", 343);
+		Product.compareProducts(p1,p2);
+	</script>
+
+</body>
+</html>

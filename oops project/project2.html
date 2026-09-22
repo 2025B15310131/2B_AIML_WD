@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class bankaccount{
+        constructor(acc_no ,holder,balance){
+            this.acc_no = acc_no;
+            this.holder = holder;
+            this.balance = balance;
+
+        }
+        deposit(amount){
+            this.balance = amount;
+            console.log("this balance is : ", this.balance)
+
+        }
+        withdrawl(amount){
+            if(this.balance<amount){
+                console.log("inffuicne balance ")
+
+            }
+        }
+        display(){
+            console.log(this.acc_no)
+            console.log(this.holder)
+            console.log(this.balance)
+        }
+
+    }
+   </script> 
+</body>
+</html>
